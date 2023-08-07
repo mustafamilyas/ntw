@@ -1,0 +1,24 @@
+{
+  "name": "ntw",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "a utility function to transform number into their words",
+  "author": "Muhamad Ilyas Mustafa <emailpribadiilyas@gmail.com>",
+  "license": "MIT",
+  "main": "lib/index.cjs.js",
+  "module": "lib/index.esm.js",
+  "types": "lib/index.d.ts",
+  "scripts": {
+    "build": "rm -rf lib && rollup -c"
+  },
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^25.0.3",
+    "@rollup/plugin-node-resolve": "^15.1.0",
+    "@rollup/plugin-json": "^6.0.0",
+    "@rollup/plugin-terser": "^0.4.3",
+    "rollup": "^3.27.2",
+    "rollup-plugin-typescript2": "^0.35.0",
+    "tslib": "^2.6.1",
+    "typescript": "^5.1.6"
+  }
+}
