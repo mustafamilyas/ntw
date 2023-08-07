@@ -1,5 +1,3 @@
-import { nodeResolve } from "@rollup/plugin-node-resolve";
-import commonjs from "@rollup/plugin-commonjs";
 import pkg from "./package.json" assert { type: "json" };
 import typescript from "rollup-plugin-typescript2";
 import terser from "@rollup/plugin-terser";
@@ -16,5 +14,5 @@ export default {
       format: "es",
     },
   ],
-  plugins: [typescript(), nodeResolve(), commonjs(), terser()],
+  plugins: [typescript(), terser()],
 };

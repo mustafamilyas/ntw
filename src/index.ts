@@ -35,6 +35,7 @@ const tens = [
 ];
 
 const tensExponent = {
+  2: "hundred",
   3: "thousand",
   6: "million",
   9: "billion",
@@ -43,7 +44,7 @@ const tensExponent = {
   18: "quintillion",
 };
 
-export function ntw(value) {
+export function ntw(value: number): string {
   if (typeof value !== "number") return "";
   if (value === 0) return firstTwenty[0];
   let result = "";
@@ -55,7 +56,8 @@ export function ntw(value) {
       result += " " + tens[Math.floor(value / 10)];
       value = value % 10;
     } else if (value < 1000) {
-      result += " " + firstTwenty[Math.floor(value / 100)] + " hundred";
+      result +=
+        " " + firstTwenty[Math.floor(value / 100)] + " " + tensExponent[2];
       value = value % 100;
     } else {
       const highestExponent = Math.floor(Math.log10(value));
