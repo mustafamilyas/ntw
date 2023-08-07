@@ -1,5 +1,5 @@
 {
-  "name": "ntw",
+  "name": "@mustafamilyas/ntw",
   "version": "1.0.0",
   "type": "module",
   "description": "a utility function to transform number into their words",
