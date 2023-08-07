@@ -1,6 +1,8 @@
 import pkg from "./package.json" assert { type: "json" };
 import typescript from "rollup-plugin-typescript2";
 import terser from "@rollup/plugin-terser";
+import commonjs from "@rollup/plugin-commonjs";
+import resolve from "@rollup/plugin-node-resolve";
 
 export default {
   input: "src/index.ts",
@@ -14,5 +16,5 @@ export default {
       format: "es",
     },
   ],
-  plugins: [typescript(), terser()],
+  plugins: [typescript(), terser(), commonjs(), resolve()],
 };
