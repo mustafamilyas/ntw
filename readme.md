@@ -3,6 +3,10 @@
   <p align="center"><b>N</b>umber <b>T</b>o <b>W</b>ord</p>
 </p>
 
+[![NPM package][npm-img]][npm-url]
+[![Build Size][build-size-img]][build-size-url]
+[![NPM Downloads][npm-downloads-img]][npm-downloads-url]
+
 A tiny utility function for converting numbers to their number words. Currently only support numbers to English words.
 
 ## Installation
@@ -29,3 +33,10 @@ ntw(672343602049) // => "six hundred seventy two billion three hundred forty thr
 ## Feedback
 
 No standard rule, you can ask me through this repository or if you prefer email then please send it to emailpribadiilyas@gmail.com
+
+[npm-img]: https://img.shields.io/npm/v/@mustafamilyas/ntw
+[npm-url]: https://npmjs.org/package/@mustafamilyas/ntw
+[build-size-img]: https://img.shields.io/bundlephobia/minzip/@mustafamilyas/ntw
+[build-size-url]: https://bundlephobia.com/result?p=@mustafamilyas/ntw
+[npm-downloads-img]: https://img.shields.io/npm/dt/@mustafamilyas/ntw
+[npm-downloads-url]: https://www.npmtrends.com/@mustafamilyas/ntw
